@@ -3,6 +3,7 @@ import { UserModule } from './User/user.module';
 import { ProductModule } from './Product/product.module';
 import { RouterModule } from '@nestjs/core';
 import { PhoneModule } from './Product/Phone/phone.module';
+import { AppController } from './app.controller';
 
 @Module({
   imports: [
@@ -16,5 +17,6 @@ import { PhoneModule } from './Product/Phone/phone.module';
       },
     ]),
   ],
+  controllers: [AppController],
 })
 export class AppModule {}
